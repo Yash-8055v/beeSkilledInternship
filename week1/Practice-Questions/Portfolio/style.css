@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #F8FAFC;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Base Styles (Desktop) */
+.nav-bar {
+  background-color: #0A1931;
+  height: 3rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-logo {
+  min-width: fit-content;
+  padding: 0 5px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-logo a {
+  color: #F8FAFC;
+  text-decoration: none;
+}
+
+.nav-logo a:hover {
+  font-size: 30px;
+  text-shadow: 
+    -1px -1px 0 #f7cb0a,  
+     1px -1px 0 #f7cb0a,
+    -1px  1px 0 #f7cb0a,
+     1px  1px 0 #f7cb0a;
+  transition: text-shadow 0.3s ease-in-out, font-size 0.5s ease;
+}
+
+/* Base list styles */
+.nav-list {
+  width: fit-content;
+  height: fit-content;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #F8FAFC;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.nav-list li a:hover {
+  color: #2563EB;
+  transition: color 0.4s ease;
+}
+
+/* Hide desktop toggle inputs by default */
+#menu-toggle, .hamburger {
+  display: none;
+}
+
+/* --- MOBILE BREAKPOINT STYLES --- */
+@media (max-width: 768px) {
+  .nav-bar {
+    margin-top: 0.25rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: space-between; /* Gives space between logo and icon */
+    padding: 1rem 20px;
+  }
+
+  .nav-logo {
+    margin-left: 1rem;
+  }
+
+  /* Show the hamburger icon on mobile */
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: white; /* Make sure icon is visible on dark background */
+  }
+
+  /* Hide the link list and stack it vertically */
+  /* FIXED: Changed .nav-link to .nav-list */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 4.25rem; /* Pushes the menu right below your nav bar */
+    left: 0;
+    background-color: #0A1931; /* Matched to your navbar color */
+    padding: 20px;
+    gap: 15px;
+    z-index: 10; /* Ensures it floats above other content */
+  }
+
+  /* MAGIC TRICK */
+  /* FIXED: Changed .nav-link to .nav-list */
+  #menu-toggle:checked ~ .nav-list {
+    display: flex;
+  }
+}
