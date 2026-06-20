@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download"
+    />
   </head>
   <body>
     <header class="header">
@@ -16,23 +20,38 @@
         <div class="nav-logo">
           <a href="#">Yash Karande</a>
         </div>
-        <div>
+        <div class="menu-wrapper">
           <!-- Hidden checkbox to track the open/close state -->
           <input type="checkbox" id="menu-toggle" />
 
           <!-- Hamburger Icon (Label for the checkbox) -->
           <label for="menu-toggle" class="hamburger">&#9776;</label>
-          
           <ul class="nav-list">
-            <li><a href="main">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="skill">Skills</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="hero" id="main">Main section</main>
+    <main class="hero" id="main">
+      <div class="hero-details">
+        <div class="hero-intro">Hi, I'm</div>
+        <div class="hero-name">Yash Karande</div>
+        <div class="hero-role">Web Developer | MERN Stack Developer</div>
+        <div class="hero-description">
+          I enjoy building clean, responsive and user-friendly web application.
+        </div>
+        
+        <button class="hero-cv" onclick="alert('CV not added yet...')">
+          <span>Download CV</span> <span class="material-symbols-outlined"> download </span>
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="./cropped_circle_image.png" alt="yash-image">
+      </div>
+    </main>
     <section class="about" id="about">about section</section>
     <section class="skill" id="skill">skill section</section>
     <footer class="footer">footer section</footer>
