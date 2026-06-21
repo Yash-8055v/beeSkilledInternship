@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F8FAFC;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.container h1 {
+  color: #111827;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.button-section {
+  margin-top: 50px;
+}
+
+.form-section {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+}

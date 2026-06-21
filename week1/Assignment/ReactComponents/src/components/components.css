@@ -1,0 +1,64 @@
+.header {
+  background: #0A1931;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer {
+  background: #0A1931;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card p {
+  color: #4B5563;
+}
+
+.btn {
+  background: #2563EB;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.form-box {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  
+}
+
+.form-box input {
+  width: 90%;
+  padding: 12px;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.form-box p {
+  margin-top: 20px;
+  color: #2563EB;
+  font-weight: 600;
+}
