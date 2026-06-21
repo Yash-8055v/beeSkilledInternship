@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 150px;
+}
