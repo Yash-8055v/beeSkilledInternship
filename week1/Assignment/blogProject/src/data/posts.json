@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React",
+    "category": "React",
+    "description": "Learn the fundamentals of React and build interactive user interfaces."
+  },
+  {
+    "id": 2,
+    "title": "Introduction to JavaScript",
+    "category": "JavaScript",
+    "description": "Understand variables, functions, arrays and objects in JavaScript."
+  },
+  {
+    "id": 3,
+    "title": "Understanding CSS Flexbox",
+    "category": "CSS",
+    "description": "Learn how to create responsive layouts using Flexbox."
+  },
+  {
+    "id": 4,
+    "title": "React useState Hook",
+    "category": "React",
+    "description": "Manage component state efficiently using useState."
+  },
+  {
+    "id": 5,
+    "title": "Responsive Web Design",
+    "category": "CSS",
+    "description": "Build websites that look great on all screen sizes."
+  }
+]
