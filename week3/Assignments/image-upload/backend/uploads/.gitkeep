@@ -1,0 +1,2 @@
+# This file ensures the uploads/ folder exists in the zip and version control.
+# Uploaded images will be saved into this folder at runtime.
